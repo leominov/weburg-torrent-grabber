@@ -7,7 +7,7 @@ import datetime
 
 torrent_file_format = './torrents/{0}'
 use_transmission = True
-debug = True
+debug = False
 
 movies_url = 'http://weburg.net/movies/new/?clever_title=1&template=0&last=0'
 movie_id_regex = '\/movies\/info\/([0-9]+)'
@@ -53,7 +53,6 @@ def save_torrent(torrent):
 
     if os.path.isfile(filename):
         log('save_torrent. File "{0}" already exists'.format(filename))
-        log('save_torrent. Stopped')
         return False
 
     f = open(filename, 'wb')
@@ -79,9 +78,8 @@ def save_torrents(torrents):
     total_saved = 0
 
     for torrent in torrents:
-        if not save_torrent(torrent):
-            break
-        total_saved += 1
+        if save_torrent(torrent):
+            total_saved += 1
 
     return total_saved
 
@@ -137,11 +135,7 @@ def main():
         if not torrent_list:
             break
 
-        total_saved_by_movie = save_torrents(torrent_list)
-        if not total_saved_by_movie:
-            break
-
-        total_saved += total_saved_by_movie
+        total_saved += save_torrents(torrent_list)
 
     return total_saved
 
