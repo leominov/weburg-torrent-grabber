@@ -18,7 +18,7 @@ seeders_regex = '([0-9]+)\sseeders'
 leechers_regeex = '([0-9]+)\sleechers'
 torrent_format = 'http://weburg.net/ajax/download/movie?obj_id={0}'
 transmission_show = '/usr/bin/transmission-show'
-transmission_format = transmission_show + ' -s {1}'
+transmission_format = transmission_show + ' -s {0}'
 settings_file = 'settings.json'
 
 headers = {
