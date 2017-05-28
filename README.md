@@ -1,11 +1,13 @@
-Weburg Torrent Grabber
-======================
+# Weburg Torrent Grabber
+
 Works fine only for Planeta users.
-Requirements
-------------
+
+## Requirements
+
 Python 2.7.X
-Default settings
-----------------
+
+## Default settings
+
 ```shell
 {
     "torrents_directory": "./torrents/",
@@ -15,9 +17,10 @@ Default settings
     "user_agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0"
 }
 ```
-Usage
------
+
+## Usage
+
 ```shell
-mkdir torrents
-./weburg.py
+$ mkdir torrents
+$ ./weburg.py
 ```
