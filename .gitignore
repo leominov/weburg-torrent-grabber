@@ -1,2 +1,8 @@
+.DS_Store
+Thumbs.db
+
 torrents/
 *.pyc
+*.sublime-project
+*.sublime-workspace
+.idea/
