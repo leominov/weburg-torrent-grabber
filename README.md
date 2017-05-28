@@ -5,6 +5,7 @@ Works fine only for Planeta users.
 ## Requirements
 
 Python 2.7.X 
+
 jq
 
 ## Default settings
