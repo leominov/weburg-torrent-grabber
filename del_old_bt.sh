@@ -5,10 +5,10 @@ set -e
 # Скрипт ищет торретнты которые старше 30 дней 
 # и удаляет торрент и файл.
 
-REMOTE=$(cat settings.json | jq -r '.transmission_remote')
-LOGIN=$(cat settings.json | jq -r '.transmission_remote_username')
-PASSWD=$(cat settings.json | jq -r '.transmission_remote_password')
-TTL=$(cat settings.json | jq -r '.ttl')
+REMOTE=$(cat settings.json | jq -re '.transmission_remote')
+LOGIN=$(cat settings.json | jq -re '.transmission_remote_username')
+PASSWD=$(cat settings.json | jq -re '.transmission_remote_password')
+TTL=$(cat settings.json | jq -re '.ttl')
 
 listing() {
     $("$REMOTE" -n "$LOGIN:$PASSWD" -l | awk '{print $1}' | grep -v 'ID' | grep -v 'Sum:')
