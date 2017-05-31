@@ -35,7 +35,7 @@ $ ./weburg.py
 
 Скрипт ищет торретнты которые старше 30 дней и удаляет торрент и файл.
 
-Конфиге сторочки `transmission_remote_username`, `transmission_remote_password` внужно поменять на свои. ttl определяет торренты старше скольких дней удалять.
+Конфиге сторочки `transmission_remote_username`, `transmission_remote_password` внужно поменять на свои, `ttl` определяет торренты старше скольких дней удалять.
 
 ### Usage
 
