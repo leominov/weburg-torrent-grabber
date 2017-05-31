@@ -10,7 +10,7 @@ jq
 
 ## Default settings
 
-```shell
+```json
 {
     "torrents_directory": "./torrents/",
     "debug": true,
@@ -31,9 +31,7 @@ $ mkdir torrents
 $ ./weburg.py
 ```
 
--------------
-del_old_bt.sh
--------------
+## Deleting old torrents and files
 
 Скрипт ищет торретнты которые старше 30 дней 
 и удаляет торрент и файл.
@@ -41,8 +39,8 @@ del_old_bt.sh
 Конфиге сторочки login, passwd внужно поменять на свои.
 ttl определяет торренты старше скольких дней удалять.
 
-Usage
------
+### Usage
+
 ```shell
-./del_old_bt.sh
+$ ./del_old_bt.sh
 ```
