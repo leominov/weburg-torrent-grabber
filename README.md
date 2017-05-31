@@ -4,9 +4,8 @@ Works fine only for Planeta users.
 
 ## Requirements
 
-Python 2.7.X 
-
-jq
+* Python 2.7.X
+* jq
 
 ## Default settings
 
@@ -35,7 +34,7 @@ $ ./weburg.py
 
 Скрипт ищет торретнты которые старше 30 дней и удаляет торрент и файл.
 
-Конфиге сторочки `transmission_remote_username`, `transmission_remote_password` внужно поменять на свои, `ttl` определяет торренты старше скольких дней удалять.
+В файле `settings.json` значения `transmission_remote_username` и `transmission_remote_password` нужно заменить на свои, значение параметра `ttl` задается в днях и определяет, какие торренты будут удалены.
 
 ### Usage
 
