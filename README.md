@@ -39,5 +39,5 @@ $ ./weburg.py
 ### Usage
 
 ```shell
-$ ./del_old_bt.sh
+$ ./del_old_bt.sh /path_you_dir/settings.json
 ```

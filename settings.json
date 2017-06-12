@@ -7,5 +7,6 @@
     "transmission_remote": "/usr/bin/transmission-remote",
     "transmission_remote_username": "user",
     "transmission_remote_password": "password",
-    "ttl": "30"
+    "ttl": "30",
+    "logfile_del": "/opt/weburg-torrent-grabber/bt_del.log"
 }
