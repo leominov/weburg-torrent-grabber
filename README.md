@@ -19,7 +19,8 @@ Works fine only for Planeta users.
     "transmission_remote": "/usr/bin/transmission-remote",
     "transmission_remote_username": "user",
     "transmission_remote_password": "password",
-    "ttl": "30"
+    "ttl": "30",
+    "logfile_del": "/opt/weburg-torrent-grabber/bt_del.log"
 }
 ```
 
@@ -39,5 +40,5 @@ $ ./weburg.py
 ### Usage
 
 ```shell
-$ ./del_old_bt.sh /path_you_dir/settings.json
+$ ./del_old_bt.sh /opt/weburg-torrent-grabber/settings.json
 ```

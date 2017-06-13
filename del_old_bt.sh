@@ -1,11 +1,10 @@
 #!/bin/bash
-
-# set -ex
-
-CONFIG=$1
-
 # Скрипт ищет торретнты которые старше 30 дней 
 # и удаляет торрент и файл.
+
+set -e
+
+CONFIG=$1
 
 if [[ $1 == "-h" ]]; then
     echo -e "$ ./del_old_bt.sh /path_you_dir/settings.json" >&2 
