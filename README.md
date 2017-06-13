@@ -13,7 +13,7 @@
 ```shell
 $ mkdir /opt/weburg-torrent-grabber/
 $ cd /opt/weburg-torrent-grabber/
-$ git clone /opt/weburg-torrent-grabber/ .
+$ git clone https://github.com/leominov/weburg-torrent-grabber .
 $ mkdir torrents
 ```
 
