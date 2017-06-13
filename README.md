@@ -33,7 +33,7 @@ $ ./weburg.py
 
 ### Настройка
 
-В файле `settings.json` значения `transmission_remote_username` и `transmission_remote_password` нужно заменить на свои реквизиты Transmission Remote; значение параметра `ttl` задается в днях и определяет, какие торренты будут удалены.
+В файле `settings.json` значения `transmission_remote_username` и `transmission_remote_password` нужно заменить на свои реквизиты Transmission Remote; значение параметра `ttl` задается в днях и определяет, какие торренты будут удалены. Параметр `logfile_del` определяет путь к лог-файлу.
 
 ### Запуск
 
